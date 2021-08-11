@@ -1,0 +1,12 @@
+.Photo1 {
+  border-radius: 10px;
+  margin-top: 4rem;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Photo1:hover {
+  background-color: rgb(56, 114, 161);
+  transition: 0.5s;
+  width: 61%;
+  transition-property: 2s;
+}

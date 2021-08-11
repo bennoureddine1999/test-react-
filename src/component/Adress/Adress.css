@@ -1,0 +1,24 @@
+.adress {
+  margin-top: 4rem;
+  margin-left: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url(/src/IMG_20191229_175637.jpg);
+  width: 80%;
+  height: 60vh;
+  color: white;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgb(209, 129, 9);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(229, 245, 87, 0.3) 0px 0px 0px 3px;
+}

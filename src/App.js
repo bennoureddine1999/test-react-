@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Adress } from "./component/Adress/Adress";
+import FullName from "./component/FullName/FullName";
+import ProfilPhoto from "./component/ProfilePhoto/ProfilePhoto";
 
 function App() {
   return (
@@ -61,7 +64,7 @@ function App() {
     //       </button>
     //     </form>
     // </div>
-    <>
+    /*<>
       <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
         <h1 className="title red">Your name here</h1>
 
@@ -77,7 +80,20 @@ function App() {
       >
         <source src="myVideo.mp4" type="video/mp4" />
       </video>
-    </>
+    </>*/
+
+    <div style={{ paddingBottom: "3rem" }}>
+      <div className="position">
+        <Adress />
+      </div>
+
+      <div className="position">
+        <FullName />
+      </div>
+      <div className="position">
+        <ProfilPhoto />
+      </div>
+    </div>
   );
 }
 

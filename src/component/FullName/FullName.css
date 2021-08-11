@@ -1,0 +1,19 @@
+.Fullname {
+  text-align: center;
+  background-color: rgb(102, 182, 247);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 5rem;
+
+  font-size: 2rem;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Fullname:hover {
+  background-color: rgb(56, 114, 161);
+  transition: 0.5s;
+  width: 51%;
+  padding-top: 0.6rem;
+}
