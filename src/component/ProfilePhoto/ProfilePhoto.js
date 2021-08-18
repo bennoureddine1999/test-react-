@@ -1,14 +1,22 @@
 import React from "react";
 import Photo from "../../photo.jpg";
 import "./ProfilePhoto.css";
+import PropTypes from "prop-types";
 
-const ProfilPhoto = () => {
+const ProfilPhoto = (props) => {
   return (
     <>
       <div className="Photo1">
-        <img style={{ width: "100%", borderRadius: 10 }} src={Photo} />
+        <img
+          onClick={props.imageclicke}
+          style={{ width: "100%", borderRadius: 10 }}
+          src={props.ProfilPhoto}
+        />
       </div>
     </>
   );
+};
+ProfilPhoto.propTypes = {
+  ProfilPhoto: PropTypes.string,
 };
 export default ProfilPhoto;

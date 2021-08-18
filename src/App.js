@@ -4,8 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Adress } from "./component/Adress/Adress";
 import FullName from "./component/FullName/FullName";
 import ProfilPhoto from "./component/ProfilePhoto/ProfilePhoto";
+import photo from "./photo.jpg";
 
 function App() {
+  const Adress1 = " Algeria dar el beida bab ezouar";
+  const fullname1 = " Ben aoumeur noureddine";
+  const ProfilePhoto1 = photo;
+  function imageclicke(e) {
+    e.preventDefault();
+    alert("profilephoto");
+  }
   return (
     //   <div className="App ">
     //     <div class="row with">
@@ -84,14 +92,14 @@ function App() {
 
     <div style={{ paddingBottom: "3rem" }}>
       <div className="position">
-        <Adress />
+        <Adress Adress={Adress1} />
       </div>
 
       <div className="position">
-        <FullName />
+        <FullName fullname={fullname1} />
       </div>
       <div className="position">
-        <ProfilPhoto />
+        <ProfilPhoto imageclicke={imageclicke} ProfilPhoto={ProfilePhoto1} />
       </div>
     </div>
   );

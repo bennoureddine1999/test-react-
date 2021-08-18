@@ -1,10 +1,14 @@
 import react from "react";
 import "./Adress.css";
+import PropTypes from "prop-types";
 
-export const Adress = () => {
+export const Adress = (props) => {
   return (
     <div className="adress">
-      <h2 className="text"> Adress: Algeria .dar el beida bab ezouar</h2>
+      <h1 className="text">{props.Adress}</h1>
     </div>
   );
+};
+Adress.propTypes = {
+  Adress: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
