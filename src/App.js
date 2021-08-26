@@ -6,6 +6,10 @@ import FullName from "./component/FullName/FullName";
 import ProfilPhoto from "./component/ProfilePhoto/ProfilePhoto";
 import photo from "./photo.jpg";
 
+import Banque from "./component/banque/banque";
+import Banque2 from "./component/banque2/banque2";
+import Checkpoint from "./component/chekpoint states/checkpoint";
+
 function App() {
   const Adress1 = " Algeria dar el beida bab ezouar";
   const fullname1 = " Ben aoumeur noureddine";
@@ -100,6 +104,15 @@ function App() {
       </div>
       <div className="position">
         <ProfilPhoto imageclicke={imageclicke} ProfilPhoto={ProfilePhoto1} />
+      </div>
+      <div className="Banque">
+        <Banque />
+      </div>
+      <div className="Banque">
+        <Banque2 />
+      </div>
+      <div className="Checkpoint">
+        <Checkpoint />
       </div>
     </div>
   );

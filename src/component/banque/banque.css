@@ -1,0 +1,25 @@
+.secondepart {
+  display: flex;
+  justify-content: space-around;
+}
+.secondepart p {
+  text-align: center;
+}
+.secondepart button {
+  width: 100%;
+  margin-top: 1rem;
+}
+.secondepart input {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 4rem;
+  margin-left: 15rem;
+}
+.firstpart {
+  margin-right: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}

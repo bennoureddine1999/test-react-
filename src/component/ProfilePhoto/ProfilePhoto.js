@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "../../photo.jpg";
 import "./ProfilePhoto.css";
 import PropTypes from "prop-types";
 

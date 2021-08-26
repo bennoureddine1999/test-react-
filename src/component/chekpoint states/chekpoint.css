@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.first {
+  border: solid 2px black;
+}
+.second {
+  border: solid 2px black;
+}

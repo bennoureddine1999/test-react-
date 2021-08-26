@@ -11,7 +11,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.Banque {
+  margin-top: 10rem;
+}
+.card {
+  margin-top: 4rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -39,6 +44,7 @@
 .flex {
   display: flex;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
