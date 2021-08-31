@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { toast } from "react-toastify";
+
 import "./banque2.css";
 
 const Banque2 = () => {
@@ -6,17 +8,29 @@ const Banque2 = () => {
   const [inputvalue1, setInputvalue1] = useState("");
   const [inputvalue2, setInputvalue2] = useState("");
   const [inputvalue3, setInputvalue3] = useState("");
+  useEffect(() => {
+    toast.success("seccess");
+  }, [solde]);
+  const inputRef = useRef();
 
   return (
     <div>
-      <h1>Bienvenue dans l'espace client de votre banque</h1>
+      <input ref={inputRef} />
+      <button
+        onClick={() => {
+          console.log(inputRef.current.value);
+        }}
+      >
+        click
+      </button>
+      <h1 className="title">Bienvenue dans l'espace client de votre banque</h1>
 
       <div className="firstpart">
         <p>
           votre solde est :<span>{solde}</span>$
         </p>
       </div>
-      <h1 className="h1">Nos services</h1>
+      <h1 className="h1 title">Nos services</h1>
       <div className="secondepart">
         <div className="first">
           <p>Recharge votre compte</p>

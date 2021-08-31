@@ -9,15 +9,22 @@ import photo from "./photo.jpg";
 import Banque from "./component/banque/banque";
 import Banque2 from "./component/banque2/banque2";
 import Checkpoint from "./component/chekpoint states/checkpoint";
+import MovieCard from "./component/movie/movie";
+import Movie from "./movie.json";
+import Card from "./component/movieCard/movieCard";
+
+import { useState } from "react";
 
 function App() {
-  const Adress1 = " Algeria dar el beida bab ezouar";
-  const fullname1 = " Ben aoumeur noureddine";
-  const ProfilePhoto1 = photo;
-  function imageclicke(e) {
-    e.preventDefault();
-    alert("profilephoto");
-  }
+  // const Adress1 = " Algeria dar el beida bab ezouar";
+  // const fullname1 = " Ben aoumeur noureddine";
+  // const ProfilePhoto1 = photo;
+  // function imageclicke(e) {
+  //   e.preventDefault();
+  //   alert("profilephoto");
+  // }
+
+  const [movie, setMovie] = useState(Movie);
   return (
     //   <div className="App ">
     //     <div class="row with">
@@ -95,7 +102,7 @@ function App() {
     </>*/
 
     <div style={{ paddingBottom: "3rem" }}>
-      <div className="position">
+      {/* <div className="position">
         <Adress Adress={Adress1} />
       </div>
 
@@ -113,6 +120,12 @@ function App() {
       </div>
       <div className="Checkpoint">
         <Checkpoint />
+      </div> */}
+      <MovieCard movie={Movie} setMovie={setMovie} />
+      <div className="moviecardcomponent">
+        {movie.map((movie1) => (
+          <Card key={movie1.id} movie={movie1} />
+        ))}
       </div>
     </div>
   );

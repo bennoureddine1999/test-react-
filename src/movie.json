@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "title": "Bright",
+      "year": "2/5/2009",
+      
+      "type":{
+        "Action":true ,
+        "Fantasy":true,
+        "crim":false
+    },
+
+      "time":160,
+      "img": {
+        "src": "./images/Bright.jfif",
+        "alt": "Bright"
+      }
+      
+    },
+    {
+        "id": 2,
+        "title": "Black Panther",
+        "year":" 12/5/2012",
+        "time":144,
+        "type":{
+            "Action":true ,
+            "Fantasy":true,
+            "crim":true
+        },
+        "img": {
+          "src": "images/Black Panter.jfif",
+          "alt": "Black Panther"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Jumanji",
+        "year": "4/8/2016",
+        "time":150,
+        "type":{
+            "Action":false ,
+            "Fantasy":true,
+            "crim":true
+        },
+        "img": {
+          "src": "images/Jumanji.jfif",
+          "alt": "Jumanji"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Spider-Man",
+        "year": "3/9/2013",
+        "time":150,
+        "type":{
+            "Action":false ,
+            "Fantasy":false,
+            "crim":true
+        },
+        "img": {
+          "src": "images/Spider-Men.jfif",
+          "alt": "Spider-Man"
+        }
+    }
+    
+      
+    
+  ]

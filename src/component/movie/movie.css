@@ -1,0 +1,43 @@
+.header {
+  height: 4rem;
+  margin-top: 3rem;
+  background-color: rgb(69, 69, 73);
+  width: 100wh;
+  position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.logo {
+  width: 6rem;
+  border-radius: 45%;
+}
+.logo1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+}
+.logoContent {
+  margin-top: 9px;
+  font-weight: 800;
+  background-color: rgb(143, 143, 145);
+  border-radius: 5px;
+  margin-left: 3px;
+}
+.recherch {
+  width: 85%;
+  border-radius: 5px;
+}
+.recherchecontent {
+  width: 70%;
+}
+.buttoncherch {
+  width: 1.3rem;
+}
+.button {
+  background-color: white;
+  border-radius: 5px;
+}

@@ -44,6 +44,12 @@
 .flex {
   display: flex;
 }
+.moviecardcomponent {
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 @keyframes App-logo-spin {
   from {

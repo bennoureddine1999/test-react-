@@ -1,6 +1,8 @@
 import { render } from "@testing-library/react";
 import react, { Component } from "react";
 import "./banque.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default class Banque extends Component {
   state = {
@@ -9,6 +11,7 @@ export default class Banque extends Component {
     inputvalue2: "",
     inputvalue3: "",
   };
+
   render() {
     return (
       <>
@@ -38,6 +41,7 @@ export default class Banque extends Component {
                 this.setState({
                   solde: this.state.solde + +this.state.inputvalue1,
                 });
+                toast.success("coin done succesfully");
               }}
             >
               Recharger
@@ -55,10 +59,13 @@ export default class Banque extends Component {
             />
             <button
               onClick={() => {
-                if (this.state.solde > this.state.inputvalue2) {
+                if (this.state.solde >= this.state.inputvalue2) {
                   this.setState({
                     solde: this.state.solde - +this.state.inputvalue2,
                   });
+                  toast.success("coin done succesfully");
+                } else {
+                  toast.error("your comp is empty");
                 }
               }}
             >
@@ -70,10 +77,13 @@ export default class Banque extends Component {
             <input
               type="text"
               onChange={(e) => {
-                if (this.state.solde > this.state.inputvalue3) {
+                if (this.state.solde >= this.state.inputvalue3) {
                   this.setState({
                     solde: this.state.solde - +this.state.inputvalue3,
                   });
+                  toast.success("coin done succesfully");
+                } else {
+                  toast.error("your comp is empty");
                 }
               }}
             />
@@ -87,6 +97,7 @@ export default class Banque extends Component {
               Recharger
             </button>
           </div>
+          <ToastContainer />;
         </div>
       </>
     );
