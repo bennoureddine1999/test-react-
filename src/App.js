@@ -6,14 +6,20 @@ import FullName from "./component/FullName/FullName";
 import ProfilPhoto from "./component/ProfilePhoto/ProfilePhoto";
 import photo from "./photo.jpg";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Component1 from "./component/component1/component1";
+import Component2 from "./component/component2/component2";
+import Component3 from "./component/component3/component3";
+
 import Banque from "./component/banque/banque";
 import Banque2 from "./component/banque2/banque2";
 import Checkpoint from "./component/chekpoint states/checkpoint";
 import MovieCard from "./component/movie/movie";
 import Movie from "./movie.json";
 import Card from "./component/movieCard/movieCard";
+import Details from "./component/details/details";
 
-import { useState } from "react";
+import { Component, useState } from "react";
 
 function App() {
   // const Adress1 = " Algeria dar el beida bab ezouar";
@@ -83,51 +89,83 @@ function App() {
     //       </button>
     //     </form>
     // </div>
-    /*<>
-      <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
-        <h1 className="title red">Your name here</h1>
+    // <>
+    //   <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+    //     <h1 className="title red">Your name here</h1>
 
-        <img src={logo} />
-        <br />
-        <img src="logo192.png" />
-      </div>
+    //     <img src={logo} />
+    //     <br />
+    //     <img src="logo192.png" />
+    //   </div>
 
-      <video
-        style={{ width: "320", height: "240" }}
-        controls="controls"
-        autoPlay="true"
-      >
-        <source src="myVideo.mp4" type="video/mp4" />
-      </video>
-    </>*/
+    //   <video
+    //     style={{ width: "320", height: "240" }}
+    //     controls="controls"
+    //     autoPlay="true"
+    //   >
+    //     <source src="myVideo.mp4" type="video/mp4" />
+    //   </video>
+    // </>
 
-    <div style={{ paddingBottom: "3rem" }}>
-      {/* <div className="position">
-        <Adress Adress={Adress1} />
-      </div>
+    // <div style={{ paddingBottom: "3rem" }}>
+    //  <div className="position">
+    //   <Adress Adress={Adress1} />
+    // </div>
 
-      <div className="position">
-        <FullName fullname={fullname1} />
-      </div>
-      <div className="position">
-        <ProfilPhoto imageclicke={imageclicke} ProfilPhoto={ProfilePhoto1} />
-      </div>
-      <div className="Banque">
-        <Banque />
-      </div>
-      <div className="Banque">
-        <Banque2 />
-      </div>
-      <div className="Checkpoint">
-        <Checkpoint />
-      </div> */}
-      <MovieCard movie={Movie} setMovie={setMovie} />
-      <div className="moviecardcomponent">
-        {movie.map((movie1) => (
-          <Card key={movie1.id} movie={movie1} />
-        ))}
-      </div>
-    </div>
+    // <div className="position">
+    //   <FullName fullname={fullname1} />
+    // </div>
+    // <div className="position">
+    //   <ProfilPhoto imageclicke={imageclicke} ProfilPhoto={ProfilePhoto1} />
+    // </div>
+    // <div className="Banque">
+    //   <Banque />
+    // </div>
+    // <div className="Banque">
+    //   <Banque2 />
+    // </div>
+    // <div className="Checkpoint">
+    //   <Checkpoint />
+    // </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <MovieCard movie={Movie} setMovie={setMovie} />
+
+          <div className="moviecardcomponent">
+            {movie.map((movie1) => (
+              <Card key={movie1.id} movie={movie1} />
+            ))}
+          </div>
+        </Route>
+        <Route exact path="/Details/:id">
+          <Details />
+        </Route>
+      </Switch>
+    </Router>
+    /*   </div>
+    <Router>
+      <ul>
+        <li>
+          <Link to="/">ci</Link>
+        </li>
+        <li>
+          <Link to="/component2">ci</Link>
+        </li>
+        <li>
+          <Link to="/component3">ci</Link>
+        </li>
+      </ul>
+      <Switch>
+        <Route exact path="/">
+          <Component1 />
+        </Route>
+        <Route exact path="/component2" component={Component2} />
+        <Route exact path="/component3">
+          <Component3 />
+        </Route>
+      </Switch>
+    </Router>*/
   );
 }
 

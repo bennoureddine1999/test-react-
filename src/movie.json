@@ -12,7 +12,7 @@
 
       "time":160,
       "img": {
-        "src": "./images/Bright.jfif",
+        "src": "/images/Bright.jfif",
         "alt": "Bright"
       }
       
@@ -28,7 +28,7 @@
             "crim":true
         },
         "img": {
-          "src": "images/Black Panter.jfif",
+          "src": "/images/Black Panter.jfif",
           "alt": "Black Panther"
         }
     },
@@ -43,7 +43,7 @@
             "crim":true
         },
         "img": {
-          "src": "images/Jumanji.jfif",
+          "src": "/images/Jumanji.jfif",
           "alt": "Jumanji"
         }
     },
@@ -58,7 +58,7 @@
             "crim":true
         },
         "img": {
-          "src": "images/Spider-Men.jfif",
+          "src": "/images/Spider-Men.jfif",
           "alt": "Spider-Man"
         }
     }

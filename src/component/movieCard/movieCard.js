@@ -1,10 +1,19 @@
 import React from "react";
 import "./movieCard.css";
+import { useHistory, useRouteMatch } from "react-router-dom";
 
 const Card = (props) => {
+  const history = useHistory();
+  const { path, url } = useRouteMatch;
+
   return (
     <>
-      <div className="moviecard">
+      <div
+        className="moviecard"
+        onClick={() => {
+          history.push(`/Details/${props.movie.id}`);
+        }}
+      >
         <img
           src={props.movie.img.src}
           alt={props.movie.img.alt}
